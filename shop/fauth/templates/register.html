@@ -1,0 +1,33 @@
+{% extends "layouts/auth.html" %}
+{% block content %}
+
+<div class="container-fluid p-0 m-0 bg-light">
+        <div class="row g-4 row-cols-1 row-cols-lg-2 min-vh-100">
+            <div class="col">
+                <div class="h-100 w-100" style="background-image: url('https://media.istockphoto.com/id/938050806/photo/variety-of-spices-and-herbs-on-kitchen-table.jpg?s=612x612&w=0&k=20&c=DK7fJc89MKhs_xSNHpyrx8KQE5o3Uou6muVYDwuu-UE='); background-size: 50rem;background-repeat: no-repeat; background-position: center;">
+                </div>
+            </div>
+            <div class="col align-self-center">
+                <form class="p-5 w-75">
+                    <div class="mb-3">
+                        <label for="email" class="form-label fs-5 fw-bold">Email address</label>
+                        <input placeholder="Email Address" type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label fs-5 fw-bold">Password</label>
+                        <input placeholder="********" type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label fs-5 fw-bold">Password</label>
+                        <input placeholder="********" type="password" class="form-control" id="password">
+                    </div>
+                    <!-- <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">Remember</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>{% endblock content %}

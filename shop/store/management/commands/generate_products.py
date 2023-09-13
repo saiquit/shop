@@ -10,7 +10,7 @@ class Command(BaseCommand):
         fake = Faker()
         num_categories = 4  # Number of categories to create
         max_products_per_category = 2  # Maximum number of products per category
-        Tag.objects.create(name='Featured')
+        # Tag.objects.create(name='Featured')
         for _ in range(num_categories):
             category = Category.objects.create(
                 name=fake.word(),
