@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "css": "node-sass frontend/scss/style.scss -o frontend/css",
+    "css:watch": "npm run css && node-sass frontend/scss/style.scss -wo frontend/css"
+  }
+}
